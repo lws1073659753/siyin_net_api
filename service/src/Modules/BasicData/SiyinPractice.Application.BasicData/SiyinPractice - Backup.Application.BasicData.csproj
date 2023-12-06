@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Application\SiyinPractice.Application.Core\SiyinPractice.Application.Core.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Framework\SiyinPractice.Framework\SiyinPractice.Framework.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Framework\SiyinPractice.Web.Core\SiyinPractice.Web.Core.csproj" />
+    <ProjectReference Include="..\..\AccessControl\SiyinPractice.Interface.AccessControl\SiyinPractice.Interface.AccessControl.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.BasicData\SiyinPractice.Domain.BasicData.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Interface.BasicData\SiyinPractice.Interface.BasicData.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Shared.BasicData\SiyinPractice.Shared.BasicData.csproj" />
+  </ItemGroup>
+
+</Project>

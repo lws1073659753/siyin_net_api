@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Infrastructure\SiyinPractice.Infrastructure.EntityFramework\SiyinPractice.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.AccessControl\SiyinPractice.Domain.AccessControl.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.Shared.AccessControl\SiyinPractice.Domain.Shared.AccessControl.csproj" />
+  </ItemGroup>
+
+</Project>

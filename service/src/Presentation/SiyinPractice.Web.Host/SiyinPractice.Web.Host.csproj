@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\framework\src\Framework\SiyinPractice.Web.Core\SiyinPractice.Web.Core.csproj" />
+    <ProjectReference Include="..\..\Modules\AccessControl\SiyinPractice.Application.AccessControl\SiyinPractice.Application.AccessControl.csproj" />
+    <ProjectReference Include="..\..\Modules\AccessControl\SiyinPractice.Infrastructure.DataStore.AccessControl\SiyinPractice.Infrastructure.DataStore.AccessControl.csproj" />
+    <ProjectReference Include="..\..\Modules\BasicData\SiyinPractice.Application.BasicData\SiyinPractice.Application.BasicData.csproj" />
+    <ProjectReference Include="..\..\Modules\BasicData\SiyinPractice.Infrastructure.DataStore.BasicData\SiyinPractice.Infrastructure.DataStore.BasicData.csproj" />
+    <ProjectReference Include="..\..\Modules\Maintenance\SiyinPractice.Application.Maintenance\SiyinPractice.Application.Maintenance.csproj" />
+    <ProjectReference Include="..\..\Modules\Maintenance\SiyinPractice.Infrastructure.DataStore.Maintenance\SiyinPractice.Infrastructure.DataStore.Maintenance.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\BasicData\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://geojson.org/schema/GeoJSON.json" /></VisualStudio></ProjectExtensions>
+
+</Project>

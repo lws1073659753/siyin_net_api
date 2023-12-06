@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Domain\ConnmIntel.Domain.Business\ConnmIntel.Domain.Business.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Shared\ConnmIntel.Shared.Core\ConnmIntel.Shared.Core.csproj" />
+    <ProjectReference Include="..\ConnmIntel.Domain.WarehouseManagement\ConnmIntel.Domain.WarehouseManagement.csproj" />
+  </ItemGroup>
+
+</Project>

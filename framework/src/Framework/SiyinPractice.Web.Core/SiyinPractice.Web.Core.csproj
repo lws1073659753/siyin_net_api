@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\SiyinPractice.Domain.Core\SiyinPractice.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SiyinPractice.Infrastructure.EntityFramework.SqlServer\SiyinPractice.Infrastructure.EntityFramework.SqlServer.csproj" />
+    <ProjectReference Include="..\..\Interface\SiyinPractice.Interface.Core\SiyinPractice.Interface.Core.csproj" />
+    <ProjectReference Include="..\..\Shared\SiyinPractice.Shared.Core\SiyinPractice.Shared.Core.csproj" />
+    <ProjectReference Include="..\SiyinPractice.AutoMapper\SiyinPractice.Mapper.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Framework\SiyinPractice.Framework.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Logging.Serilog\SiyinPractice.Logging.Serilog.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
+</Project>

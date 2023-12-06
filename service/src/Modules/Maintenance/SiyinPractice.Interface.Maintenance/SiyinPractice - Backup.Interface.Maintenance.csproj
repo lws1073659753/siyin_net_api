@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Framework\SiyinPractice.Caching\SiyinPractice.Caching.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Interface\SiyinPractice.Interface.Core\SiyinPractice.Interface.Core.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.Maintenance.Shared\SiyinPractice.Domain.Shared.Maintenance.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Shared.Maintenance\SiyinPractice.Shared.Maintenance.csproj" />
+  </ItemGroup>
+
+</Project>

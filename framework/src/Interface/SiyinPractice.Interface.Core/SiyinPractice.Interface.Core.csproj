@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\SiyinPractice.Domain.Core\SiyinPractice.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Shared\SiyinPractice.Shared.Core\SiyinPractice.Shared.Core.csproj" />
+  </ItemGroup>
+
+</Project>

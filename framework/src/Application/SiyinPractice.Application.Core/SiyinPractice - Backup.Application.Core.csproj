@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <None Remove="Extensions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\SiyinPractice.Domain.Core\SiyinPractice.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Framework\SiyinPractice.Caching\SiyinPractice.Caching.csproj" />
+    <ProjectReference Include="..\..\Framework\SiyinPractice.Framework\SiyinPractice.Framework.csproj" />
+    <ProjectReference Include="..\..\Interface\SiyinPractice.Interface.Core\SiyinPractice.Interface.Core.csproj" />
+    <ProjectReference Include="..\..\Shared\SiyinPractice.Shared.Core\SiyinPractice.Shared.Core.csproj" />
+  </ItemGroup>
+
+</Project>

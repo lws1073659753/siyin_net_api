@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\service\src\Modules\Maintenance\SiyinPractice.Application.Maintenance\SiyinPractice.Application.Maintenance.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Framework\SiyinPractice.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

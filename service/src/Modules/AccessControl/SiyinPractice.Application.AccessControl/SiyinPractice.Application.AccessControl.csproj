@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Application\SiyinPractice.Application.Core\SiyinPractice.Application.Core.csproj" />
+    <ProjectReference Include="..\..\Maintenance\SiyinPractice.Domain.Maintenance\SiyinPractice.Domain.Maintenance.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.AccessControl\SiyinPractice.Domain.AccessControl.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Interface.AccessControl\SiyinPractice.Interface.AccessControl.csproj" />
+  </ItemGroup>
+
+</Project>

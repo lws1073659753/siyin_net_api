@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\framework\src\Framework\SiyinPractice.Caching\SiyinPractice.Caching.csproj" />
+    <ProjectReference Include="..\..\..\..\..\framework\src\Interface\SiyinPractice.Interface.Core\SiyinPractice.Interface.Core.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Domain.Shared.AccessControl\SiyinPractice.Domain.Shared.AccessControl.csproj" />
+    <ProjectReference Include="..\SiyinPractice.Shared.AccessControl\SiyinPractice.Shared.AccessControl.csproj" />
+  </ItemGroup>
+
+</Project>

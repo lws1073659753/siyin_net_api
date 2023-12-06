@@ -1,0 +1,32 @@
+﻿using SiyinPractice.Interface.Core;
+using SiyinPractice.Shared.Core.Dto;
+using SiyinPractice.Shared.Maintenance.Dto;
+
+namespace SiyinPractice.Interface.Maintenance;
+
+/// <summary>
+/// 日志查询
+/// </summary>
+public interface ILogAppService : IAppService
+{
+    /// <summary>
+    /// 登录日志
+    /// </summary>
+    /// <param name="searchDto"></param>
+    /// <returns></returns>
+    Task<PageModelDto<LoginLogDto>> GetLoginLogsPagedAsync(LogSearchPagedDto searchDto);
+
+    /// <summary>
+    /// 操作日志
+    /// </summary>
+    /// <param name="searchDto"></param>
+    /// <returns></returns>
+    Task<PageModelDto<OpsLogDto>> GetOpsLogsPagedAsync(LogSearchPagedDto searchDto);
+
+    /// <summary>
+    /// 异常日志
+    /// </summary>
+    /// <param name="searchDto"></param>
+    /// <returns></returns>
+    Task<PageModelDto<NlogLogDto>> GetNlogLogsPagedAsync(LogSearchPagedDto searchDto);
+}
